@@ -1,0 +1,36 @@
+./objects/matrixfunctionsf16.o: \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\MatrixFunctionsF16.c \
+  RTE\_Target_1\Pre_Include_Global.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_add_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\matrix_functions_f16.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\arm_math_types_f16.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\arm_math_types.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h \
+  C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h \
+  C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\string.h \
+  C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\math.h \
+  C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\float.h \
+  C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\limits.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\arm_math_memory.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\none.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\utils.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_sub_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_trans_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_scale_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_mult_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_vec_mult_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_cmplx_trans_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_cmplx_mult_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_inverse_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\matrix_utils.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_init_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_cholesky_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_solve_upper_triangular_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_solve_lower_triangular_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_mat_qr_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Source\MatrixFunctions\arm_householder_f16.c \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\basic_math_functions_f16.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\fast_math_functions_f16.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\fast_math_functions.h \
+  C:\Denisevici\Programs\keil\ARM\CMSIS-DSP\1.14.4\Include\dsp\basic_math_functions.h
