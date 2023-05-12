@@ -29,12 +29,12 @@ void GpioInit(void)
 	GPIOC->PUPDR |= (0x1 << 18); // pull up 8.4.4 p.284
 }
 
-void LedOn(uint16_t pin)
+void LedOn(uint8_t pin)
 {
-	GPIOC->ODR |= (0x1 << pin);
+	if(pin >= 6 && pin <= 9) { GPIOC->ODR |= (0x1 << pin); }
 }
 
-void LedOff(uint16_t pin)
+void LedOff(uint8_t pin)
 {
 	GPIOC->ODR &= ~(0x1 << pin);
 }

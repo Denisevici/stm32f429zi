@@ -2,6 +2,6 @@
 
 void GpioInit(void);
 
-void LedOn(uint16_t pin);
+void LedOn(uint8_t pin);
 
-void LedOff(uint16_t pin);
+void LedOff(uint8_t pin);

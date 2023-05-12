@@ -1,7 +1,9 @@
 #include "uart.h"
-#include "timer.h"
 
+uint32_t buffer = 0;
+uint8_t operationsCount = 0;
 bool transmittingIsAllowed = false;
+bool gotNewIntructions = false;
 
 void UartInit(void)
 {	
@@ -25,8 +27,11 @@ void UartInit(void)
 	// usart3 enable
 	USART3->CR1 = USART_CR1_UE; //bit 13 p.1003
 	
-	// 19200 baud (fclk = 16 MHz)
+	// p.974-975
+	// 19200 baud (fclk = 16 MHz) 52(dec) = 34(hex); 1/16 = 0.0625; => 341
 	USART3->BRR = 0x341;
+	//115200 baud (fclk = 16 MHz) 8(dec) = 8(hex); 11/16 = 0.6875 => 8B
+	//USART3->BRR = 0x8B;
 
 	// usart3 transmit and receive enable
 	USART3->CR1 |= USART_CR1_TE | USART_CR1_RE;	
@@ -38,19 +43,22 @@ void UartInit(void)
 
 void USART3_IRQHandler(void)
 {
-	uint32_t receivedData = USART3->DR;
-	if(receivedData == 's') 
-	{ 
-		transmittingIsAllowed = !transmittingIsAllowed;
-		timeFromTransmittingStart = 0;
-	}
+	buffer = USART3->DR;
+	gotNewIntructions = true;
 }
 
-
-void UartTransmit(uint16_t data)
+void UartTransmitTime(uint32_t time)
 {
-		while ((USART3->SR & USART_SR_TXE) == 0) {} //wait transfer to end
-		USART3->DR = (data >> 8) & 0xff;
-		while ((USART3->SR & USART_SR_TXE) == 0) {} //wait transfer to end
-		USART3->DR = data & 0xff;
+	while ((USART3->SR & USART_SR_TXE) == 0) {} // wait transfer to end
+	USART3->DR = (time >> 16) & 0xff;
+	while ((USART3->SR & USART_SR_TXE) == 0) {} 
+	USART3->DR = (time >> 8) & 0xff;
+	while ((USART3->SR & USART_SR_TXE) == 0) {}
+	USART3->DR = time & 0xff;
+}
+
+void UartTransmitData(uint8_t data)
+{
+	while ((USART3->SR & USART_SR_TXE) == 0) {}
+	USART3->DR = data;
 }

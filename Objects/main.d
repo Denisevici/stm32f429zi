@@ -10,4 +10,5 @@
   C:\Denisevici\Programs\keil\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
   ..\fpg_reg\uart.h \
   C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  ..\fpg_reg\dac.h ..\fpg_reg\adc.h ..\fpg_reg\timer.h
+  ..\fpg_reg\dac.h ..\fpg_reg\adc.h ..\fpg_reg\timer.h \
+  ..\fpg_reg\settings.h ..\fpg_reg\transmit.h ..\fpg_reg\leds.h

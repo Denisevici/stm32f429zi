@@ -439,6 +439,36 @@
               <FileType>1</FileType>
               <FilePath>.\gpio.c</FilePath>
             </File>
+            <File>
+              <FileName>settings.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\settings.h</FilePath>
+            </File>
+            <File>
+              <FileName>settings.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\settings.c</FilePath>
+            </File>
+            <File>
+              <FileName>transmit.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\transmit.h</FilePath>
+            </File>
+            <File>
+              <FileName>transmit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\transmit.c</FilePath>
+            </File>
+            <File>
+              <FileName>leds.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\leds.h</FilePath>
+            </File>
+            <File>
+              <FileName>leds.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\leds.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

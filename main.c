@@ -3,6 +3,7 @@
 #include "dac.h"
 #include "adc.h"
 #include "timer.h"
+#include "settings.h"
 
 int main(void)
 {
@@ -11,11 +12,28 @@ int main(void)
 	DacInit();
 	AdcInit();
 	TimerInit();
-	
-	LedOn(8);
-	DacSetValue(2040);
+	InitLeds();
 	
 	while(1)
-	{	
+	{
+		if(gotNewIntructions)
+		{
+			ApplyNewInstructions();
+			gotNewIntructions = false;
+		}		
+		
+		if(tick && transmittingIsAllowed)
+		{
+			if(timeFromTransmittingStart > transmittingDurationInMs)
+			{
+				transmittingIsAllowed = false;
+				UartTransmitTime(0xffffff); // transmitting is over signal
+			}
+			else
+			{
+				TransmitData();
+				tick = false;
+			}
+		}
 	}
 }

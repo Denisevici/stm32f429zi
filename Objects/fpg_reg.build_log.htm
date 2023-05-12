@@ -22,12 +22,39 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 C:\Users\dkomerzan\Desktop\Practice\fpg_reg\fpg_reg.uvprojx
-Project File Date:  04/06/2023
+Project File Date:  05/02/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-".\Objects\fpg_reg.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+leds.c(1): warning: In file included from...
+../fpg_reg/leds.h(7): warning: padding struct 'Led' with 1 byte to align 'intensity' [-Wpadded]
+        uint16_t intensity;
+                 ^
+1 warning generated.
+compiling leds.c...
+transmit.c(1): warning: In file included from...
+../fpg_reg/transmit.h(3): warning: In file included from...
+../fpg_reg/leds.h(7): warning: padding struct 'Led' with 1 byte to align 'intensity' [-Wpadded]
+        uint16_t intensity;
+                 ^
+transmit.c(54): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        index = i;
+                              ~ ^
+2 warnings generated.
+compiling transmit.c...
+settings.c(1): warning: In file included from...
+../fpg_reg/settings.h(3): warning: In file included from...
+../fpg_reg/transmit.h(3): warning: In file included from...
+../fpg_reg/leds.h(7): warning: padding struct 'Led' with 1 byte to align 'intensity' [-Wpadded]
+        uint16_t intensity;
+                 ^
+1 warning generated.
+compiling settings.c...
+linking...
+Program Size: Code=3164 RO-data=460 RW-data=20 ZI-data=1688  
+".\Objects\fpg_reg.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -53,8 +80,8 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Keil::Device:Startup:2.6.3
-      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
       Source file:   MDK/Device/Source/ARM/STM32F42xxx_43xxx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
       Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
       Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f429xx.s
       Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c

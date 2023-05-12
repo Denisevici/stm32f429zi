@@ -1,4 +1,4 @@
-./objects/uart.o: uart.c ..\fpg_reg\uart.h \
+./objects/leds.o: leds.c ..\fpg_reg\leds.h \
   C:\Denisevici\Programs\keil\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   C:\Denisevici\Programs\keil\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h \
   C:\Denisevici\Programs\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h \

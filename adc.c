@@ -2,6 +2,8 @@
 
 void AdcInit(void)
 {
+	uint32_t delay = 10000;
+	
 	RCC->APB2ENR |= RCC_APB2ENR_ADC1EN; //ADC1 clocking
 	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN; // GPIOA clocking
 	
@@ -20,11 +22,10 @@ void AdcInit(void)
 	
 	ADC1->CR2 |= ADC_CR2_SWSTART; // start adc
 	
-	uint32_t delay = 10000;
 	while (delay != 0) { delay--; }
 }
 
-uint16_t AdcGetValue(void)
+uint8_t AdcGetValue(void)
 {
 	while(!(ADC1->SR & ADC_SR_EOC)) {}
 	return ADC1->DR;

@@ -1,4 +1,4 @@
-./objects/uart.o: uart.c ..\fpg_reg\uart.h \
+./objects/transmit.o: transmit.c ..\fpg_reg\transmit.h \
   C:\Denisevici\Programs\keil\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   C:\Denisevici\Programs\keil\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h \
   C:\Denisevici\Programs\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h \
@@ -8,4 +8,6 @@
   C:\Denisevici\Programs\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h \
   C:\Denisevici\Programs\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h \
   C:\Denisevici\Programs\keil\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
-  C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\stdbool.h
+  C:\Denisevici\Programs\keil\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  ..\fpg_reg\leds.h ..\fpg_reg\uart.h ..\fpg_reg\adc.h \
+  ..\fpg_reg\timer.h ..\fpg_reg\gpio.h ..\fpg_reg\dac.h

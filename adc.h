@@ -2,4 +2,4 @@
 
 void AdcInit(void);
 
-uint16_t AdcGetValue(void);
+uint8_t AdcGetValue(void);
